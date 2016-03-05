@@ -1,0 +1,15 @@
+sudo: required
+
+language: c
+
+services:
+    - docker
+
+script:
+    - docker build --no-cache=true -t dds-modbus .
+    #- docker run -itd --name=modbus dds-modbus
+    #- docker logs modbus
+    #- docker rm -f modbus
+
+notifications:
+    email: false

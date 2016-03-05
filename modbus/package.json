@@ -1,0 +1,15 @@
+{
+  "name": "nodemb",
+  "version": "1.0.0",
+  "description": "node.js modbus-tcp test",
+  "main": "client.js",
+  "scripts": {
+    "start": "node client.js"
+  },
+  "dependencies" : {
+    "jsmodbus"     : "*",
+    "modbus-tcp"   : "*"
+  },
+  "author": "Taka Wang",
+  "license": "ISC"
+}
