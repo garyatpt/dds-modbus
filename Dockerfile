@@ -27,9 +27,7 @@ RUN cd / && \
 
 ## Build dds-modbus
 COPY . /dds-modbus/
-RUN mkdir -p /dds-modbus/build && \
-    cd /dds-modbus/build && \
-    cmake .. && make \
+RUN mkdir -p /dds-modbus/build \
+    && cd /dds-modbus/build \
+    && cmake .. && make \
     #&& make install
-
-#CMD /usr/bin/master & /usr/bin/bridge
